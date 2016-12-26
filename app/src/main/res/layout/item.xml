@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg_shadow_border"
+    android:paddingBottom="10dp"
+
+    >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/over"
+        android:scaleType="fitXY"
+        android:alpha="0.3"
+        />
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/chatInvtImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/over"
+        app:border_color="#EEEEEE"
+        app:border_width="1dp"
+        app:shadow="true"
+        app:shadow_color="#8BC34A"
+
+
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingTop="110dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/chatInvtName"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        tools:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+
+        >
+
+    </View>
+
+    <TextView
+        android:layout_gravity="top|left"
+        android:gravity="left"
+        android:textSize="8sp"
+        android:textColor="#E0E0E0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatDate"
+        android:text="date"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/chatInvtMsg"
+        android:textSize="10sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_gravity="left"
+        android:gravity="top"
+        tools:text="sdbfjsnfkerlger;gleg'gt;'g;e' bfksfkrfsmlsrvhsgfdsedsdcscsagdcgeccsd sdcwedo dccasfcxwygdccysa2324 cwfeftw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        />
+
+    <View
+        android:id="@+id/item_swipe_left_indicator"
+        android:alpha="0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+       />
+
+    <View
+        android:id="@+id/item_swipe_right_indicator"
+        android:alpha="0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+       />
+
+</LinearLayout>

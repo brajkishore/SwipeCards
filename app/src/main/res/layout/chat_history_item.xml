@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            >
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/chatImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/over"
+                app:border_color="#EEEEEE"
+                app:border_width="1dp"
+                app:shadow="true"
+                app:shadow_color="#8BC34A"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/chatImg"
+                android:id="@+id/chatUName"
+                android:text="Name"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chatDate"
+                android:text="date"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/chatLine"
+                android:layout_toRightOf="@id/chatImg"
+                android:layout_below="@+id/chatUName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdbfjsnfkerlger;gleg'gt;'g;e' bfksfkrfsmlsrvhsgfdsedsdcscsagdcgeccsd sdcwedo dccasfcxwygdccysa2324 cwfeftw"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
